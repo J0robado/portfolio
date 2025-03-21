@@ -181,6 +181,7 @@ section.horizontal h1 {
 section.horizontal p {
     margin: 0;
     padding: 0rem 1rem 0.5rem 1rem;
+    font-size: var(--normal-font-size);
 }
 li{
     list-style: none;
