@@ -1,3 +1,9 @@
+const linkIn = document.getElementById("myInput");
+
+function setLink(){
+    linkIn.value = window.location.href;
+}
+
 function copyToClipboard() {
     let input = document.querySelector(".d-field input");
     let label = document.querySelector(".d-field span");
@@ -78,5 +84,5 @@ function resolveDataUrl() {
     });
 }
 
-// Generar QR al cargar
+setLink();
 generateQRCode();
