@@ -11,11 +11,12 @@
     --body-font-2: 'Outfit', sans-serif;
     --body-font-3: 'Mulish', sans-serif;
     --body-font-4: 'Urbanist', sans-serif;
+
     --most-bigger-font-size: 3rem;
     --biggest-font-size: 2.25rem;
     --bigger-font-size: 1.55rem;
     --big-font-size: 1.35rem;
-    --medium-font-size: 1.25rem;
+    --medium-font-size: 2rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
@@ -24,6 +25,7 @@
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
     --smallest-font-size: .65rem;
+
     --border-size: 2px;
 
     --font-medium: 500;
@@ -135,16 +137,20 @@
     --text-gradient: linear-gradient(45deg, #2638ff, #870ed3, #ff6593);
 }
 @media screen and (min-width: 1024px) {
+    html{
+        font-size: 16px;
+    }
     :root {
-        --biggest-font-size: 2.3rem;
+        --biggest-font-size: 4rem;
         --h1-font-size: 2.25rem;
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
         --normal-font-size: 1rem;
-        --title-font-size: .8rem;
         --small-font-size: .875rem;
-        --smaller-font-size: .76rem;
-        --smallest-font-size: .71rem;
+        --smaller-font-size: .813rem;
+    }
+    section.horizontal .item {
+        flex: 0 0 600px;
     }
 }
 *{
@@ -153,6 +159,10 @@
     box-sizing: border-box;
     text-decoration: none;
     transition: 0.3s background-color ease-in-out;
+}
+
+html{
+    font-size: 13px;
 }
 
 html, body, section.horizontal {
@@ -177,10 +187,13 @@ section.horizontal h1 {
     margin: 0;
     padding: 50px 0 0 50px;
 }
-
+p{
+    font-size: var(--normal-font-size);
+}
 section.horizontal p {
     margin: 0;
     padding: 0rem 1rem 0.5rem 1rem;
+    font-size: calc(var(--normal-font-size) - 2px);
 }
 li{
     list-style: none;
@@ -219,9 +232,6 @@ input, input::placeholder , textarea, textarea::placeholder{
 }
 input:focus , textarea:focus{
     color: var(--text-color);
-}
-input[type=number] {
-    -moz-appearance: textfield;
 }
 .dark-theme input[type=date] {
     color-scheme: dark;
@@ -497,7 +507,7 @@ section.horizontal {
     align-items: stretch;
     justify-content: stretch;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.5rem;
     z-index: 998;
 }
 .actions .button{
@@ -505,7 +515,7 @@ section.horizontal {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: var(--big-font-size);
+    font-size: var(--h3-font-size);
     background-color: var(--body-color);
     border: 1px solid var(--border-color-4);
     border-radius: 6px;
@@ -532,7 +542,8 @@ section.horizontal .item {
     position: relative;
     padding: 150px 80px;
     flex: 0 0 500px;
-    height: 100%;
+    height: max-content;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -640,14 +651,14 @@ section.horizontal .animation-wrap .item .pills{
 }
 section.horizontal .animation-wrap .item .pills span{
     position: relative;
-    padding: 0.1rem 0.5rem;
+    padding: 0.3rem 1rem;
     flex: 0 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--tooltip);
     border: var(--border-size) solid var(--tooltip);
-    border-radius: 20px;
+    border-radius: 50px;
     font-weight: 600;
     gap: 5px;
     overflow: hidden;
@@ -697,7 +708,7 @@ section .txt h2{
 }
 section .txt p{
     color: var(--text-color-2);
-    line-height: 20px;
+    line-height: 1.7;
 }
 section .txt svg{
     position: relative;
@@ -739,7 +750,7 @@ section.home{
 }
 .home .profile{
     pointer-events: none;
-    width: min(100%, 240px);
+    width: min(100%, 21rem);
     height: auto;
     object-fit: cover;
     filter: brightness(150%) contrast(100%) saturate(150%);
@@ -816,7 +827,7 @@ section.home{
 #yo{
     margin: 0.5rem 0 0 0;
     font-weight: 500;
-    max-width: 430px;
+    max-width: 450px;
 }
 
 
