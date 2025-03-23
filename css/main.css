@@ -137,15 +137,12 @@
     --text-gradient: linear-gradient(45deg, #2638ff, #870ed3, #ff6593);
 }
 @media screen and (min-width: 1024px) {
-    html{
-        font-size: 16px;
-    }
     :root {
         --biggest-font-size: 4rem;
         --h1-font-size: 2.25rem;
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
+        --normal-font-size: 1.1rem;
         --small-font-size: .875rem;
         --smaller-font-size: .813rem;
     }
@@ -193,7 +190,7 @@ p{
 section.horizontal p {
     margin: 0;
     padding: 0rem 1rem 0.5rem 1rem;
-    font-size: calc(var(--normal-font-size) - 2px);
+    font-size: var(--normal-font-size);
 }
 li{
     list-style: none;
@@ -515,7 +512,7 @@ section.horizontal {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: var(--h3-font-size);
+    font-size: var(--bigger-font-size);
     background-color: var(--body-color);
     border: 1px solid var(--border-color-4);
     border-radius: 6px;
