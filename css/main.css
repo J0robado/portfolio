@@ -175,11 +175,17 @@ body {
     font-family: var(--body-font-4); 
     font-weight: 300;
     background-color: var(--input-color);
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-direction: column;
     color: var(--text-color);
     margin: 0;
     padding: 0;
 }
-
+section.horizontal{
+    width: 100%;
+}
 section.horizontal h1 {
     margin: 0;
     padding: 50px 0 0 50px;
@@ -240,6 +246,7 @@ main{
     align-items: stretch;
     justify-content: start;
     flex-direction: column;
+    max-width: 90rem;
 }
 
 
@@ -846,11 +853,10 @@ section.home{
     }
     section.home{
         padding: var(--scroll-padd) 4rem 0rem 4rem;
-        flex-direction: column;
-        align-items: start;
+
     }
     .home .profile{
-        width: min(100%, 140px);
+        width: min(100%, 15rem);
     }
     .home .txt{
         padding: 0;
@@ -900,8 +906,14 @@ section.home{
     .home .txt span{
         font-size: var(--normal-font-size);
     }
+    .home .profile{
+        width: min(100%, 13rem);
+    }
     #yo{
         font-size: var(--normal-font-size);
+    }
+    section.horizontal .item {
+        flex: 0 0 400px;
     }
 }
 @media screen and (max-width: 480px) {
