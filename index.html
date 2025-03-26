@@ -16,33 +16,33 @@
     <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body class="dark-theme">
-    <main>
-        <div class="share-cont">
-            <div class="bg"></div>
-            <div class="modal">
-                <i class='bx bx-x' id="cl-m"></i>
-                <div class="qr">
-                    <div class="qr-cont">
-                        <div id="qr-code"></div>
-                    </div>
-                </div>
-                <ul>
-                    <li><a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $url; ?>" target="_blank"><i class='bx bxl-facebook-square'></i></a></li>
-                    <li><a class="whatsapp" href="https://api.whatsapp.com/send?text=<?php echo $url; ?>" target="_blank"><i class='bx bxl-whatsapp' ></i></a></li>
-                    <li><a class="mail" href="mailto:?subject=Mira%20mi%20tarjeta&body=<?php echo $url; ?>" target="_blank"><i class='bx bxs-envelope'></i></a></li>
-                    <li><a onclick="share()"><i class='bx bx-export'></i></a></li>
-                </ul>
-                <div class="d-field" onclick="copyToClipboard()">
-                    <input type="text" id="myInput" readonly>
-                    <span>Copiar</span>
+    <div class="share-cont">
+        <div class="bg"></div>
+        <div class="modal">
+            <i class='bx bx-x' id="cl-m"></i>
+            <div class="qr">
+                <div class="qr-cont">
+                    <div id="qr-code"></div>
                 </div>
             </div>
+            <ul>
+                <li><a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $url; ?>" target="_blank"><i class='bx bxl-facebook-square'></i></a></li>
+                <li><a class="whatsapp" href="https://api.whatsapp.com/send?text=<?php echo $url; ?>" target="_blank"><i class='bx bxl-whatsapp' ></i></a></li>
+                <li><a class="mail" href="mailto:?subject=Mira%20mi%20tarjeta&body=<?php echo $url; ?>" target="_blank"><i class='bx bxs-envelope'></i></a></li>
+                <li><a onclick="share()"><i class='bx bx-export'></i></a></li>
+            </ul>
+            <div class="d-field" onclick="copyToClipboard()">
+                <input type="text" id="myInput" readonly>
+                <span>Copiar</span>
+            </div>
         </div>
-        <div class="actions">
-            <div class="button" id="scrollUpBtn" style="opacity: 0; visibility: hidden;"><i class='bx bx-up-arrow-alt'></i></div>
-            <div class="button" id="theme-button"><i class='bx bx-moon'></i></div>
-            <div class="button" id="shbtn"><i class='bx bx-share-alt'></i></div>
-        </div>
+    </div>
+    <div class="actions">
+        <div class="button" id="scrollUpBtn" style="opacity: 0; visibility: hidden;"><i class='bx bx-up-arrow-alt'></i></div>
+        <div class="button" id="theme-button"><i class='bx bx-moon'></i></div>
+        <div class="button" id="shbtn"><i class='bx bx-share-alt'></i></div>
+    </div>
+    <main>
         <section class="home">
             <img class="profile" src="img/perfil.avif" alt="Desarrollador web">
             <div class="txt" id="my-details">
@@ -640,6 +640,12 @@
             </div>
         </div>
     </section>
+
+    <script>
+        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         lucide.createIcons();
@@ -654,10 +660,5 @@
     <script src="js/cubes.js"></script>
     <script src="js/share-cont.js"></script>
     <script src="js/main.js"></script>
-
-    <script>
-        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/speed-insights/script.js"></script>
 </body>
 </html>
