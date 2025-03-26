@@ -155,7 +155,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    transition: 0.3s background-color ease, 0.3s color ease;
+    transition: .3s background-color ease, .3s color ease;
 }
 
 html{
