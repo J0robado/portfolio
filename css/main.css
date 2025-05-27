@@ -64,9 +64,9 @@
     --border-color-3: #cad2d3;
     --border-color-4: #cacaca;
     --border-table: rgba(0, 0, 0, 0.06);
-    --variant: #ffad5b;  
-    --link: #ffad5b;
-    --checked: #ffad5b;
+    --variant: #ff7a01;  
+    --link: #ff7a01;
+    --checked: #ff7a01;
     --shadow: #646464;
     --shadow-2: #ffffff;
     --pdf: #f26262;
@@ -119,9 +119,9 @@
     --rejected: #f38b8bba;
     --resent: #8be7f3ba;
     --success: #239cff;
-    --variant: #f57a4d;  
-    --link: #f57a4d;
-    --checked: #f57a4d;
+    --variant: #ff7a01;  
+    --link: #ff7a01;
+    --checked: #ff7a01;
     --scroll: #2b2c3b;
     --border-color-2: #0d121e;
     --border-color-3: #1b1c26;

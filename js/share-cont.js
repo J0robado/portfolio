@@ -63,8 +63,8 @@ function generateQRCode() {
         logoBackgroundTransparent: true, // Fondo transparente en logo
         dotScale: 1, // Escala de los puntos del QR        
         // 🔹 Personalizar los "ojos" del QR
-        PO: "#f15a24", // Color de los ojos exteriores
-        PI: "#f15a24" 
+        PO: "#ff7a01", // Color de los ojos exteriores
+        PI: "#ff7a01" 
     };
 
     // Limpiar contenido previo
